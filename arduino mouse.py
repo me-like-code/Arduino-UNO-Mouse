@@ -1,5 +1,5 @@
 import serial
-import pyautogui as pg
+from pyautogui import moveTo
 
 # pg.FAILSAFE = False
 
@@ -13,7 +13,6 @@ the value of y"""
 while True:
     read = s.readline().decode('ascii')
     array = read.split()
-    print(array)
     x = int(array[0])
     y = 1440-int(array[1])
-    pg.moveTo(int(x), int(y))
+    moveTo(int(x), int(y))

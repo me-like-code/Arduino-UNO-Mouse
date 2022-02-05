@@ -1,8 +1,6 @@
 import serial
 from pyautogui import moveTo
 
-# pg.FAILSAFE = False
-
 s = serial.Serial("COM5", '9600')
 
 """"Since 0,0 is in the top left corner of

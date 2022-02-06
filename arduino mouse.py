@@ -1,12 +1,11 @@
-import serial
+from serial import Serial
 from pyautogui import moveTo
 
-s = serial.Serial('COM5', '9600')
+s = Serial('COM5', '9600')
 
 '''Since 0,0 is in the top left corner of
 the screen in pyautogui, we have to
-subtract the max screen height from
-the value of y'''
+subtract y from the max screen height'''
 
 while True:
     read = s.readline().decode('ASCII')

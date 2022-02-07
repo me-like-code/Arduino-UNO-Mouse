@@ -11,6 +11,6 @@ while True:
     read = s.readline().decode('ASCII')
     array = read.split()
     x = int(array[0])
-    y = 1440-int(array[1])
-    moveTo(int(x), int(y))
+    y = 1439-int(array[1])
+    moveTo(int(x), int(y), 0.01)
 
